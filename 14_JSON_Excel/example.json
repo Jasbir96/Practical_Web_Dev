@@ -1,0 +1,77 @@
+[
+    {
+        "name": "Steve",
+        "last Name": "Rogers",
+        "isAvenger": true,
+        "friends": [
+            "Bruce",
+            "Neter",
+            "Natasha"
+        ],
+        "age": 45,
+        "address": {
+            "city": "New York",
+            "state": "manhatten"
+        }
+    },
+    {
+        "name": "Natasha",
+        "last Name": "Rogers",
+        "isAvenger": true,
+        "friends": [
+            "Bruce",
+            "Neter",
+            "Natasha"
+        ],
+        "age": 45,
+        "address": {
+            "city": "New York",
+            "state": "manhatten"
+        }
+    },
+    {
+        "name": "Peter",
+        "last Name": "Rogers",
+        "isAvenger": true,
+        "friends": [
+            "Bruce",
+            "Neter",
+            "Natasha"
+        ],
+        "age": 45,
+        "address": {
+            "city": "New York",
+            "state": "manhatten"
+        }
+    },
+    {
+        "name": "Thor",
+        "last Name": "Rogers",
+        "isAvenger": true,
+        "friends": [
+            "Bruce",
+            "Neter",
+            "Natasha"
+        ],
+        "age": 45,
+        "address": {
+            "city": "New York",
+            "state": "manhatten"
+        }
+    },
+    {
+        "name": "Thor",
+        "last Name": "Rogers",
+        "isAvenger": true,
+        "friends": [
+            "Bruce",
+            "Neter",
+            "Natasha"
+        ],
+        "age": 45,
+        "address": {
+            "city": "New York",
+            "state": "manhatten"
+        }
+    }
+]
