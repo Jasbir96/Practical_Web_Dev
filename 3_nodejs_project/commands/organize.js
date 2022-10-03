@@ -1,9 +1,18 @@
+let fs = require("fs");
+let path = require("path");
+let types = {
+    media: ["mp4", "mkv"],
+    archives: ['zip', '7z', 'rar', 'tar', 'gz', 'ar', 'iso', "xz"],
+    documents: ['csv', 'docx', 'doc', 'pdf', 'xlsx', 'xls', 'odt', 'ods', 'odp', 'odg', 'odf', 'txt', 'ps', 'tex'],
+    app: ['exe', 'dmg', 'pkg', "deb"]
+}
 function organizeFn(dirPath) {
     // console.log("organize command implemnted for ", dirPath);
     // 1. input -> directory path given
     let destPath;
     if (dirPath == undefined) {
         destPath = process.cwd();
+        // console.log("hello");
         return;
     } else {
         let doesExist = fs.existsSync(dirPath);
@@ -11,6 +20,7 @@ function organizeFn(dirPath) {
 
             // 2. create -> organized_files -> directory
             destPath = path.join(dirPath, "organized_files");
+            console.log(destPath);
             if (fs.existsSync(destPath) == false) {
                 fs.mkdirSync(destPath);
             }
@@ -34,7 +44,7 @@ function organizeHelper(src, dest) {
         if (isFile) {
             // console.log(childNames[i]);
             let category = getCategory(childNames[i]);
-            console.log(childNames[i], "belongs to --> ", category);
+            // console.log(childNames[i], "belongs to --> ", category);
             // 4. copy / cut  files to that organized directory inside of any of category folder 
             sendFiles(childAddress, dest, category);
         }

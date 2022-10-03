@@ -1,3 +1,5 @@
+let fs = require("fs");
+let path = require("path");
 function treeFn(dirPath) {
     // let destPath;
     if (dirPath == undefined) {
