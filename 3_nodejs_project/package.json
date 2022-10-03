@@ -10,6 +10,6 @@
   "author": "",
   "license": "ISC",
   "bin": {
-    "peppy": "main.js"
+    "jarvis": "main.js"
   }
 }
